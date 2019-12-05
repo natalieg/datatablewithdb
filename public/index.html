@@ -1,0 +1,31 @@
+<html>
+
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.scss">
+
+</head>
+
+<body>
+  <h1>Datatable</h1>
+  <div class="content">
+      <table>
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+
+    <form class="addChara" action="/api/post" method="post">
+      <h3>Add Character</h3>
+      <label>ID</label> <input id='inputID' type="number" name="id"><br>
+      <label>Name</label> <input autocomplete="off" type="text" name="name"><br>
+      <label>Age</label><input autocomplete="off" type="number" name="age"><br>
+      <label>Class</label><input autocomplete="off"  type="text" name="job"><br>
+      <label>Home</label><input autocomplete="off"  type="text" name="home"><br>
+      <input class="button" type="submit" value="Submit">
+    </form>
+
+  </div>
+  <script src="javascripts/dataController.js"></script>
+</body>
+
+</html>
